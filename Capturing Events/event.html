@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body>
+    <h1>In this we are going to learn about events</h1>
+    <button>Do not press</button>
+    <script>
+        var btn=document.querySelector('button')
+        btn.addEventListener('click',function(event){
+            event.target.style.backgroundColor="red"
+            alert("You were told to not to press")
+
+        })
+    </script>
+</body>
+</html>

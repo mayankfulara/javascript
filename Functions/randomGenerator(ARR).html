@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Generator</title>
+</head>
+<body>
+    <h1>We are going to learn about the ranfom Generator</h1>
+    <script>
+        var food=['Cheese','burger','momo','oreo']
+        function ranfomInt(min,max){
+          /*   var tvalues=max-min+1;
+            var rndm=Math.random();
+            var val1=rndm*tvalues;
+            var val2=Math.floor(val1);
+            var final=min+val2;
+            return final; */
+            return Math.floor((max-min+1)*Math.random())+min;
+        }
+        console.log(food[ranfomInt(0,3)]);
+    </script>
+</body>
+</html>

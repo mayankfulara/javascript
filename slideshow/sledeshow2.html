@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We are going to learn about slideshow</title>
+</head>
+<body>  
+    <h1>Slideshow</h1>
+    <div>
+    <img src="download1.jpg" alt="slideshow image" id="myimage">
+    </div>
+    <p><a href="#" id="previous">previous</a>---<a href="#" id="next">next</a></p>
+    <script>
+        var myImages=["download1.jpg","download2.jpg","download3.jpg"]
+        var currentImage=0
+        document.getElementById('next').onclick=nextPhoto
+        document.getElementById('previous').onclick=previousPhoto
+        function nextPhoto(){
+            currentImage++;
+            if(currentImage>myImages.length-1){currentImage=0}
+            document.getElementById('myimage').src=myImages[currentImage]
+        }
+        function previousPhoto(){
+            currentImage--;
+            if(currentImage<0){currentImage=myImages.length-1}
+            document.getElementById('myimage').src=myImages[currentImage]
+        }
+    </script>
+</body>
+</html>

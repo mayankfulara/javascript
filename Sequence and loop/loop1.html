@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is the practice about the loop and sequence</h1>
+</body>
+<script>
+    var food=['apple','banana','burger','sandwich']
+    var myString="I would like to eat"
+    console.log(`${myString} ${food[1]}`)
+   /*  for (i=0;i<food.length;i++){
+        console.log(`${myString} ${food[i]}`)
+    } */
+    //we will start the for loop to check every element
+    for (i=0;i<food.length;i++){
+       //here we get the even elements and concert them to uppercase
+        if (i%2==0){
+           
+            console.log(`${myString} ${food[i].toUpperCase()}`);
+
+        }
+        else{
+            console.log(`${myString} ${food[i]}`)
+        }
+        
+    }
+</script>
+</html>

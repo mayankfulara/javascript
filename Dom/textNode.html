@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1>Thsis is how you create a text node</h1>
+    <div>
+        <p>This is a paragraph under a div</p>
+    </div>
+    <script>
+        var myTAg=document.createElement('p');
+        var myText=document.createTextNode("This is a new paragraph")
+        myTAg.appendChild(myText)
+        var myDiv=document.querySelector('div');
+        myDiv.appendChild(myTAg)
+    </script>
+    
+</body>
+</html>

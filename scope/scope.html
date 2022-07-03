@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defining scope</title>
+</head>
+<body>
+    <h1>In this we are going to define scope</h1>
+    <script>
+        var av="this is a global scope"
+        function testScope(){
+            var av="This is a local scope"
+            console.log(av)
+        }
+        testScope();
+        console.log(av)
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElseIf</title>
+</head>
+<body>
+    <h1 id="one">This is to test the ELIF statetment</h1>
+    
+</body>
+<script>
+
+    document.getElementById("one").style.color="orange"
+    var colour=['red','blue','green','yellow']
+    var scokor=colour[7]
+   /*  if(scokor=='red'){
+        console.log("The colour is red");
+    }
+    else if(scokor=='blue'){
+        console.log("the colour is blue");
+    }
+    else if(scokor=='green'){
+        console.log("the colour is greeen");
+    }
+    else{
+        console.log("Colour is yelllow");
+    } */
+    switch(scokor){
+        case "red":console.log("The colour is red"); break;
+        case "blue":console.log("The colour is blue"); break;
+        case "green":console.log("The colour is green"); break;
+        case "yellow":console.log("The colour is yellow"); break;
+        default: console.log("there was an error");
+    }
+</script>
+</html>

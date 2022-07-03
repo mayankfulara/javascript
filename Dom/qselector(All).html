@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>querySelector</title>
+</head>
+<body>
+    <h1>This is about query selctor</h1>
+    <div id="selector">
+        <p>This is paragraph </p>
+        <p>Here is some <textarea name="DS" id="" cols="20" rows="5"></textarea></p>
+        <p>tHIS IS AWESOME</p>
+    </div>
+    <script>
+        var myText=document.querySelectorAll('#selector p')
+        for(i=0;i<myText.length;i++){
+            myText[i].style.color="Red"
+
+        }
+    </script>
+</body>
+</html>
